@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+html {
+    font-size: 100%;
+    
+}
+body {
+	color: #555;
+	font-family: sans-serif;
+}
+
+
+.title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 7rem;
+    margin-bottom: 4rem;
+}
+
+p {
+    line-height: 1.7;
+    font-size: 1.125rem;
+}
+.container{
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    width: 100vw;
+    
+}
+section{
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.first{
+    background-image: url(test2-bg1.jpg);
+    
+    text-align: center;
+    
+}
+
+
+
+.two{
+    background-image: url(test2-bg2.jpeg);
+    
+    text-align: center;
+}
+
+
+
+
+
+
