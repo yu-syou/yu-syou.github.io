@@ -1,1 +1,0 @@
-# yu-syou.github.io
