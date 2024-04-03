@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>formの使い方</title>
+    </head>
+    
+    <body>
+        <p>formを使うときはformタグをかき、form内を全てformタグで囲います</p>
+        <ul>
+            <li>主な属性は</li>
+            <li>action  　　データの送信先ページを指定</li>
+            <li>method  　データの転送方法の指定(大体getかpost)</li>
+            <li>name    　　フォームの名前を指定</li>
+        </ul>
+        
+        <!--<form action="example.php" method="post" name="contact-form">
+        ここにフォームの部品が入ります
+        </form>
+        -->
+        
+        <p>
+            -----------------------------------------------------------------
+        </p>
+        
+        
+        <p>inputタグにtype属性でtextを指定すると、1行入力欄を使えます</p>
+        名前：<input type="text">
+        <p>またplaceholder属性を付与することで、あらかじめテキストを用意できます</p>
+        名前：<input type="text" placeholder="名字　名前">
+        <p>１行テキストの属性は様々なものがあります</p>
+        <ul>
+            <li>text  　　　１行のテキスト(初期値)</li>
+            <li>search 　　検索する時のテキスト</li>
+            <li>email  　　　メールアドレス</li>
+            <li>tel    　　　　電話番号</li>
+            <li>url    　　　　WebサイトのURL</li>
+        </ul>
+        
+        
+        <p>
+            -----------------------------------------------------------------
+        </p>
+        
+            
+        <p>複数の選択肢から一つだけを選んで欲しい場合は、ラジオボタンを用意します</p>
+        <p>主な属性は</p>
+        <ul>
+            <li>name  　　ラジオボタンの名前</li>
+            <li>value 　 　送信される選択肢の値</li>
+            <li>checked    　最初から選択されている状態にする時に指定</li>
+        </ul>
+        性別：
+        <input type="radio" name="gender" value="男">男
+        <input type="radio" name="gender" value="女" checked>女
+        <input type="radio" name="gender" value="その他">その他
+        
+        
+        <p>
+            -----------------------------------------------------------------
+        </p>
+        
+        
+        <p>チェックボックスは選択肢を複数選んで欲しい場合に使います</p>
+        <p>主な属性はラジオボタンと一緒です</p>
+        好きな色：
+        <input type="checkbox" name="color" value="赤" checked>赤
+        <input type="checkbox" name="color" value="青">青
+        <input type="checkbox" name="color" value="黄">黄
+        <input type="checkbox" name="color" value="緑">緑
+        
+        <p>また、labelタグ、for属性とid属性を組み合わせることでボタンの名前に選択肢の判定を付与することができます</p>
+        好きな色：
+        <input type="checkbox" name="color" value="赤" id="red" checked>
+        <label for="red">赤</label>
+        <input type="checkbox" name="color" value="青" id="brue">
+        <label for="brue">青</label>
+        <input type="checkbox" name="color" value="黄" id="yellow">
+        <label for="yellow">黄</label>
+        <input type="checkbox" name="color" value="緑" id="green">
+        <label for="green">緑</label>
+        
+        
+        
+        <p>
+            -----------------------------------------------------------------
+        </p>
+        
+        
+        <p>type属性にsubmitを指定すると、フォームに入力したものを送信できます</p>
+        <p>主な属性は</p>
+        <ul>
+            <li>name  　 ボタンの名前</li>
+            <li>value 　 ボタンに表示されるテキスト</li>
+        </ul>
+        <input type="submit" value="送信する">
+        <p>またtype属性にimageを指定し、src、alt属性をつけることでボタンに画像を使うことができます</p>
+        <input type="image" src="button.png" alt="送信する">
+        
+        
+        <p>
+            -----------------------------------------------------------------
+        </p>
+        
+        
+        <p>selectタグとoptionタグで選択肢を表示できます</p>
+        <p>選択肢全体をselectタグで囲み、選択項目はoptionタグでそれぞれ囲みます</p>
+        <p>selectタグの主な属性は</p>
+        <ul>
+            <li>name  　 　セレクトボックスの名前</li>
+            <li>maltiple 　 Shifまたはctrlキー(Macなら⌘キー)で複数の項目を選択可能にする</li>
+        </ul>
+        <p>optionタグの主な属性は</p>
+        <ul>
+            <li>value 　　 送信する値</li>
+            <li>selected 　最初から選択されている状態にする時に指定</li>
+        </ul>
+        
+        血液型：
+        <select name="bloodtype">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="O">O</option>
+            <option value="AB">AB</option>
+            <option value="不明">不明</option>
+        </select>
+        
+        
+        <p>
+            -----------------------------------------------------------------
+        </p>
+        
+        
+        <p>textareaタグを使うことで、複数行にわたるテキストを入力できます</p>
+        <p>入力する際に初期値が消えるようにplaceholder属性をつけると良いかもしれません</p>
+        <textarea name="m">メッセージを入力</textarea>>
+        <textarea name="m" placeholder="メッセージを入力"></textarea>
+        
+    </body>
+</html>
