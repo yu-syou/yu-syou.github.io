@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+cl p{
+    color: #000
+}
+
+cl .blue{
+    color: #0bd;
+}
+
+id #blue{
+    color: orange;
+}
+
+nu .blue{
+    color: #0bd;
+}
+
+nu .text-center{
+    text-align: center;
+}
+
+nu .small{
+    font-size: small;
+}
+

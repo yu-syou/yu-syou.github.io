@@ -1,0 +1,42 @@
+<!DOTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>フォント②と配色</title>
+        <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+        <link rel="stylesheet" href="style4.css">
+    </head>
+    
+    <body>
+        <fonts>
+            <p>猫は毎日12~16時間は睡眠を取ると言われています。ただし、熟睡している時間は意外と少なく、ほとんどが浅い眠りです。物音がするとすぐ目を覚ますのはそのせいなんですね。猫は毎日12~16時間は睡眠を取ると言われています。ただし、熟睡している時間は意外と少なく、ほとんどが浅い眠りです。物音がするとすぐ目を覚ますのはそのせいなんですね。このようにGoogle Fontsなどから引っ張ってくることでWebサーバー上のフォントを読み込むことができます。</p><br>
+        </fonts>
+        
+        <color>
+            <h2>色のつけかた</h2>
+            <h3>１.カラーコードで指定する</h3>
+            <p>カラーコードは # から始まり、0 1 2 3 4 5 6 7 8 9 a b c d e fの16文字の中から6桁の英数字を選びます。<br>
+                6桁のうち左二つが<red style="color: #ff0000">赤</red>、真ん中二つが<green style="color: #44ff44">緑</green>、右二つが<blue style="color: #0000ff">青</blue>の度合いを表しています。また、0に近づくと暗くなり、fに近づくと明るくなります。<br>同じ数字が連続する場合は省略できます。
+                こんなふうに　<sho style="color: #f00">#f00</sho>
+            </p>
+            
+            <h3>2.RGB値で指定する</h3>
+            <p>RGB値はrgb(赤の数値、緑の数値、青の数値)で書きます。数字の範囲は0(暗い)~255(明るい)です<br>
+               またAlpha値はrgba(赤、緑、青、透明度)というふうに書きます。透明度の数値は0(透明)~1(不透明)が範囲です。<br>
+               こんなふうに <rgb style="color: rgb(255,0,0)">rgb</rgb>   <rgba style="color: rgba(52, 244, 218, 0.854)">rgba</rgba><br>
+               カラーピッカー(要検索)を使うと色探しが捗りますよ。
+            </p>
+            
+             <h3>3.色の名前を直接書く</h3>
+            <p>color:の後に直接色の名前を書くことで色を指定できます。直感的にわかりやすいですが、細かい指定はできないので適宜使い分けましょう。
+                こんなふうに <colo style="color: rgb(255, 0, 0)">red</colo>  <color style="color: blue">blue</color></p><br>
+        </color>
+        
+        <back>
+            <h2>背景色</h2>
+            <p>background-colorプロパティを使うことで背景色を指定できます</p>
+        </back>
+        
+        
+    </body>
+</html>

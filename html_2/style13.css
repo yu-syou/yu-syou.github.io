@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+ .item{
+    background: #0bd;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+flex .container{
+    display: flex;
+}
+
+dire .container{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+wrap .container{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+content .container{
+    display: flex;
+    justify-content: space-around;
+}
+
+items .container{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+
+align .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 300px;
+}

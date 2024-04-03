@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+div ma{
+    background: #0bd;
+    margin-top: 30px;
+    margin-left: 100px;
+    /*margin: 30px 0 0 100px;でもいけます*/
+}
+
+div p{
+    background: #0bd;
+    padding: 40px;
+    /*padding-right: 40px;
+    padding-bottom: 40px;*/
+}

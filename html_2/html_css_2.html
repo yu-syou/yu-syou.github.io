@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSSを適用する</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    
+    <body>
+        <h1>猫の一日</h1>
+        <p>ひたすら寝ています。</p><br><br>
+        
+        <h3>CSSのルールや記述方法など</h3>
+        <p>
+            bodyとかh1で指定しているのを「セレクター」という<br>
+            colorやfont-sizeなどを「プロパティ」という。プロパティは文字の色や大きさ、背景色など様々ある<br>
+            20pxとか#00fは「値」で、プロパティの具体的な値を指定する<br>
+            サイズや幅の単位は以下のものがよく使われます<br>
+            
+            ・px  　画面の最小単位<br>
+            ・%　　親要素のサイズを基準に割合で指定した単位<br>
+            ・rem　ルート要素(html要素)に指定されたサイズを基準にした単位<br><br>
+
+            CSSのルール<br>
+            ・h1{color: red}　　というふうに１行でも書ける<br>
+            ・基本、小文字で書いた方が良い<br>
+            ・複数のセレクターに指定するには、  h1,p{~~}　　というふうにセレクター同士を　,　で区切る<br>
+            ・プロパティの間には ,　を入れる<br>
+        </p>
+        <div>
+            <p>
+                タグの中の一部分にCSSを適用したい場合は、セレクターに,をつけずに書きます（div p{}）<br><br><br>
+            </p>
+        </div>
+        
+        <h3>font-sizeは文字のサイズを指定します</h3>
+        <p>指定するには　px rem % などの数値をつけるか<br>
+           xx-small　  x-small 　 small 　 medium(標準)  　large  　x-large 　 xx-large　のキーワードを使います </p><br>
+        
+        <h3>CSSで　　html{~~}　　と書くことで、html全体にプロパティを適用できます</h3>
+        
+        
+    </body>
+</html>

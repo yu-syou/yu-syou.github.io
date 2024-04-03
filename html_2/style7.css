@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+body{
+    background-image: url(images/bg.png);
+    background-repeat: no-repeat; 
+    background-position: center top;
+    /*pxで指定する場合、  background-position: 30px 80px  というふうに書く*/
+}
+
+/*  backgroundプロパティを使って一括で値を指定する
+    例(c3-css-backimage3.htmlにも同じ記述があります)
+
+        div{
+          background: #70a2dc url(bg.png) no-repeat venter top/cover;
+          height: 100vh;
+        }
+
+*/

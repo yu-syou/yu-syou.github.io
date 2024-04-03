@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>レイアウトを組む</title>
+        <link rel="stylesheet" href="style13.css">
+       
+    </head>
+    
+    <head>
+        <h2>Flexbox</h2>
+        <p>レイアウトを組むとき、例えば画像やブロックを横配置したい時や、順序を変えて配置したい時があります。そんな時は、Flexboxという記述をとることでレイアウトの幅が広がります。</p>
+        <flex>
+            <div class="container">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+            </div>
+        </flex>
+        <p>containerクラスにdisplay: flexが追加されたことで、横に並びました。プロパティはさまざまなものがあるので、以下に示します。</p><br><br>
+        
+        <dire>
+            <h3>flex-direction</h3>
+            <p>flex-directionプロパティ。並べる方向を縦、または横に指定できます。初期値はrow。(今はrow-severseとしています)</p>
+            <ul>
+                <li>row　　　　　　　左から右に配置</li>
+                <li>row-severse　　 右から左に配置</li>
+                <li>column　　　　　上から下に配置</li>
+                <li>column-reverse　下から上に配置</li>
+            </ul>
+            <div class="container">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+            </div>
+        </dire><br>
+        
+        <wrap>
+            <h3>flex-wrap</h3>
+            <p>flex-wrapプロパティ。子要素を１行で並べるか、複数行で並べるかを指定できます。初期値はnowrapです。(今はwrap-reserveとしています)</p>
+            <ul>
+                <li>nowrap　　　　　　子要素を折り返しせず、1行に並べる</li>
+                <li>wrap　　 　　　　  子要素を折り返し、複数行に上から下に並べる</li>
+                <li>wrap-reverse　　　子要素を折り返し、複数行に下から上に並べる</li>
+            </ul>
+            <div class="container">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+                <div class="item">Item 5</div>
+                <div class="item">Item 6</div>
+                <div class="item">Item 7</div>
+                <div class="item">Item 8</div>
+            </div>
+        </wrap><br>
+        
+        <content>
+            <h3>justify-content</h3>
+            <p>justify-contentプロパティ。親要素(container)内に空きスペースがあった場合に、子要素を水平方向のどの位置に配置するかを指定します。(初期値はflex-start)今はspace-aroundとしています。<br>主な値は以下の通り。</p>
+            <ul>
+                <li>flex-start　　　　　　　行の開始位置から配置。左揃え。</li>
+                <li>flex-end　　 　　　　　 行末から配置。右揃え。</li>
+                <li>center　　　　　　 　　中央揃え</li>
+                <li>space-between　　　　最初と最後の子要素を両端に配置し、残りの要素は均等に間隔を空けて配置</li>
+                <li>space-around　　 　　 両端の子要素を含め、均等に配置</li>
+            </ul>
+            <div class="container">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+            </div>
+        </content><br>
+        
+        <items>
+            <h3>align-items</h3>
+            <p>align-itemsプロパティ。親要素に空きスペースがあった場合、子要素を垂直方向のどの位置に配置するかを指定します。(初期値はstretch)今はcenterとしています。</p>
+            <ul>
+                <li>stretch　　　　　　　親要素の高さ、またはコンテンツの一番多い子要素の高さに合わせて広げて配置</li>
+                <li>flex-start　 　　　　親要素の開始位置から配置。上揃え</li>
+                <li>flex-end　　　　 　　　親要素の終点から配置。下揃え</li>
+                <li>center　　　　　　　　　中央揃え。</li>
+                <li>baseline　 　　 　　　ベースラインで揃える</li>
+            </ul>
+            <div class="container">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+            </div>
+        </items><br>
+        
+        <align>
+            <h3>align-content</h3>
+            <p>align-contentプロパティ。子要素が複数行に渡った場合、垂直方向の揃えを指定します。しかし、flex-wrap: nowrap;が適用されていると無効になるので注意が必要です。初期値はstretchで、今はspace-aroundを指定しています。</p>
+            <ul>
+                <li>stretch　　　　　　　親要素の高さに合わせて広げて配置</li>
+                <li>flex-start　 　　　　親要素の開始位置から配置。上揃え</li>
+                <li>flex-end　　　　 　　　親要素の終点から配置。下揃え</li>
+                <li>center　　　　　　　　　中央揃え。</li>
+                <li>space-between　 　　 　　最初と最後の子要素を上下の端に配置し、残りのようは均等に間隔を開けて配置</li>
+                <li>space-around　　　　上下端にある子要素も含めて、均等に間隔をあけて配置。</li>
+            </ul>
+            <div class="container">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+                <div class="item">Item 5</div>
+                <div class="item">Item 6</div>
+                <div class="item">Item 7</div>
+                <div class="item">Item 8</div>
+                <div class="item">Item 9</div>
+                <div class="item">Item 10</div>
+            </div>
+        </align>
+        
+    </head>
+</html>

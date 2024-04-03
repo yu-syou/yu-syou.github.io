@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+bor p{
+    border-width: thin;
+    border-style: solid;
+}
+
+thick p{
+    border-width: thick;
+    border-style: solid;
+}
+
+px p{
+    border-width: 1px 4px 8px 12px;
+    border-style: solid;
+}
+
+so p{
+    border-width: 8px;
+    border-style: solid;
+}
+
+dob p{
+    border-width: 8px;
+    border-style: double
+}
+
+da p{
+    border-width: 8px;
+    border-style: dashed;
+}
+
+dot p{
+    border-width: 8px;
+    border-style: dotted;
+}
+
+gr p{ 
+    border-width: 8px;
+    border-style: groove
+}
+
+ri p{
+    border-width: 8px;
+    border-style: ridge;
+}
+
+in p{
+    border-width: 8px;
+    border-style: inset;
+}
+
+ou p{
+    border-width: 8px;
+    border-style: outset;
+}
+
+ch p{
+    border-width: 8px;
+    border-style: dotted ridge inset outset;
+}
+
+bl p{
+    border-style: solid;
+    border-color: #0bd;
+}
+
+to p{
+    border-style: solid;
+    border-color: tomato;
+}
+
+cch p{
+    border-width: 2px;
+    border-style: solid;
+    border-color: tan #0bd tomato #000;
+}
+
+sbo p{
+    border-bottom: 2px solid #0bd;
+}
+
+sal p{
+    border: 5px dotted tomato;
+}
